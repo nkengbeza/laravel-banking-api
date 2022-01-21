@@ -16,7 +16,13 @@ class CustomerFactory extends Factory
     public function definition()
     {
         $branch = BankBranch::all()->first();
+        if ($branch == null) {
+            $branch = BankBranch::factory()->count(1)->create()->first();
+        }
         $user = User::all()->first();
+        if ($user == null) {
+            $user = User::factory()->count(1)->create()->first();
+        }
         return [
             'first_name' => $this->faker->firstName,
             'middle_name' => $this->faker->lastName,

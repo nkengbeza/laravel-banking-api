@@ -68,11 +68,11 @@ class BankAccountController extends Controller
      * @apiResourceModel App\Models\BankAccount
      *
      * @param Request $request
-     * @return JsonResponse|Response
+     * @return JsonResponse|BankAccountResource
      * @throws Throwable
      * @throws ValidationException
      */
-    public function store(Request $request): Response|JsonResponse
+    public function store(Request $request): BankAccountResource|JsonResponse
     {
         $validator = Validator::make($request->all(), [
             'account_type' => [
@@ -99,7 +99,7 @@ class BankAccountController extends Controller
                     $account->account_balance = $validated['initial_deposit'];
                     $account->customer_id = $validated['customer_id'];
                     $account->created_at_branch = $validated['created_at_branch'];
-                    $account->created_by = $user == null ? $user->id : null;
+                    $account->created_by = $user != null ? $user->id : null;
                     $account->is_active = true;
                     $account->created_at = Carbon::now();
                     $account->updated_at = Carbon::now();

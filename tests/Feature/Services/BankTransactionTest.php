@@ -2,10 +2,7 @@
 
 namespace Tests\Feature\Services;
 
-use App\Models\Bank;
 use App\Models\BankAccount;
-use App\Models\User;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
@@ -28,13 +25,6 @@ class BankTransactionTest extends TestCase
             $toAccount = BankAccount::factory()->count(1)->create()->first();
         } else {
             $toAccount = BankAccount::all()->last();
-        }
-
-        $user = null;
-        if (User::count() == 0) {
-            $user = User::factory()->count(1)->create()->first();
-        } else {
-            $user = User::all()->first();
         }
 
         $requestBody = [
@@ -75,13 +65,6 @@ class BankTransactionTest extends TestCase
             $bankAccount = BankAccount::all()->first();
         }
 
-        $user = null;
-        if (User::count() == 0) {
-            $user = User::factory()->count(1)->create()->first();
-        } else {
-            $user = User::all()->first();
-        }
-
         $requestBody = [
             'account_number' => $bankAccount->account_number,
             'amount' => 15000.0,
@@ -117,13 +100,6 @@ class BankTransactionTest extends TestCase
             $bankAccount = BankAccount::all()->first();
         }
 
-        $user = null;
-        if (User::count() == 0) {
-            $user = User::factory()->count(1)->create()->first();
-        } else {
-            $user = User::all()->first();
-        }
-
         $requestBody = [
             'account_number' => $bankAccount->account_number,
             'amount' => 15000.0,
@@ -137,8 +113,6 @@ class BankTransactionTest extends TestCase
         $response = $this->withMiddleware(['sanctum'])
             ->withHeaders($this->defaultJsonHeaders())
             ->postJson(route('transactions.withdraw'), $requestBody);
-
-        Log::error($response->getContent());
 
         $response
             ->assertStatus(200)
