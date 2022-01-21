@@ -23,14 +23,14 @@ endpoints:
         name: from
         description: ''
         required: true
-        example: ipsum
+        example: architecto
         type: string
         custom: []
       to:
         name: to
         description: ''
         required: true
-        example: impedit
+        example: labore
         type: string
         custom: []
       amount:
@@ -76,7 +76,7 @@ endpoints:
         name: account_number
         description: ''
         required: true
-        example: minus
+        example: sed
         type: string
         custom: []
       amount:
@@ -122,7 +122,7 @@ endpoints:
         name: account_number
         description: ''
         required: true
-        example: autem
+        example: porro
         type: string
         custom: []
       amount:

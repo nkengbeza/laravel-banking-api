@@ -42,9 +42,9 @@ paths:
                 type: object
                 example:
                   data:
-                    id: 62
-                    account_number: CMR91063209134398268065166915
-                    account_type: CURRENT
+                    id: 86
+                    account_number: CMR51764736331688994786594421
+                    account_type: SAVINGS
                     account_balance: 10000000
                     owner:
                       id: 1
@@ -82,15 +82,15 @@ paths:
                       email_verified_at: '2022-01-21T12:02:54.000000Z'
                       created_at: '2022-01-21T12:02:54.000000Z'
                       updated_at: '2022-01-21T12:02:54.000000Z'
-                    created_at: '2022-01-21T15:11:11.000000Z'
-                    updated_at: '2022-01-21T15:11:11.000000Z'
+                    created_at: '2022-01-21T16:24:57.000000Z'
+                    updated_at: '2022-01-21T16:24:57.000000Z'
                 properties:
                   data:
                     type: object
                     example:
-                      id: 62
-                      account_number: CMR91063209134398268065166915
-                      account_type: CURRENT
+                      id: 86
+                      account_number: CMR51764736331688994786594421
+                      account_type: SAVINGS
                       account_balance: 10000000
                       owner:
                         id: 1
@@ -128,8 +128,8 @@ paths:
                         email_verified_at: '2022-01-21T12:02:54.000000Z'
                         created_at: '2022-01-21T12:02:54.000000Z'
                         updated_at: '2022-01-21T12:02:54.000000Z'
-                      created_at: '2022-01-21T15:11:11.000000Z'
-                      updated_at: '2022-01-21T15:11:11.000000Z'
+                      created_at: '2022-01-21T16:24:57.000000Z'
+                      updated_at: '2022-01-21T16:24:57.000000Z'
       tags:
         - 'Bank Account Management'
       requestBody:
@@ -142,7 +142,7 @@ paths:
                 account_type:
                   type: string
                   description: ''
-                  example: ea
+                  example: asperiores
                 initial_deposit:
                   type: string
                   description: 'Must be at least 0 characters.'
@@ -150,11 +150,11 @@ paths:
                 customer_id:
                   type: string
                   description: ''
-                  example: quibusdam
+                  example: ut
                 created_at_branch:
                   type: integer
                   description: ''
-                  example: 2
+                  example: 11
               required:
                 - account_type
                 - initial_deposit
@@ -215,8 +215,8 @@ paths:
                 example:
                   data:
                     -
-                      id: 63
-                      account_number: CMR77077475320174654355699186
+                      id: 87
+                      account_number: CMR50741510408379961061343634
                       account_type: SAVINGS
                       account_balance: 10000000
                       owner:
@@ -255,11 +255,11 @@ paths:
                         email_verified_at: '2022-01-21T12:02:54.000000Z'
                         created_at: '2022-01-21T12:02:54.000000Z'
                         updated_at: '2022-01-21T12:02:54.000000Z'
-                      created_at: '2022-01-21T15:11:11.000000Z'
-                      updated_at: '2022-01-21T15:11:11.000000Z'
+                      created_at: '2022-01-21T16:24:57.000000Z'
+                      updated_at: '2022-01-21T16:24:57.000000Z'
                     -
-                      id: 64
-                      account_number: CMR04224353672431359935425780
+                      id: 88
+                      account_number: CMR27731536328867187715532832
                       account_type: SAVINGS
                       account_balance: 10000000
                       owner:
@@ -298,15 +298,15 @@ paths:
                         email_verified_at: '2022-01-21T12:02:54.000000Z'
                         created_at: '2022-01-21T12:02:54.000000Z'
                         updated_at: '2022-01-21T12:02:54.000000Z'
-                      created_at: '2022-01-21T15:11:11.000000Z'
-                      updated_at: '2022-01-21T15:11:11.000000Z'
+                      created_at: '2022-01-21T16:24:57.000000Z'
+                      updated_at: '2022-01-21T16:24:57.000000Z'
                 properties:
                   data:
                     type: array
                     example:
                       -
-                        id: 63
-                        account_number: CMR77077475320174654355699186
+                        id: 87
+                        account_number: CMR50741510408379961061343634
                         account_type: SAVINGS
                         account_balance: 10000000
                         owner:
@@ -345,11 +345,11 @@ paths:
                           email_verified_at: '2022-01-21T12:02:54.000000Z'
                           created_at: '2022-01-21T12:02:54.000000Z'
                           updated_at: '2022-01-21T12:02:54.000000Z'
-                        created_at: '2022-01-21T15:11:11.000000Z'
-                        updated_at: '2022-01-21T15:11:11.000000Z'
+                        created_at: '2022-01-21T16:24:57.000000Z'
+                        updated_at: '2022-01-21T16:24:57.000000Z'
                       -
-                        id: 64
-                        account_number: CMR04224353672431359935425780
+                        id: 88
+                        account_number: CMR27731536328867187715532832
                         account_type: SAVINGS
                         account_balance: 10000000
                         owner:
@@ -388,8 +388,8 @@ paths:
                           email_verified_at: '2022-01-21T12:02:54.000000Z'
                           created_at: '2022-01-21T12:02:54.000000Z'
                           updated_at: '2022-01-21T12:02:54.000000Z'
-                        created_at: '2022-01-21T15:11:11.000000Z'
-                        updated_at: '2022-01-21T15:11:11.000000Z'
+                        created_at: '2022-01-21T16:24:57.000000Z'
+                        updated_at: '2022-01-21T16:24:57.000000Z'
                     items:
                       type: object
       tags:
@@ -429,8 +429,8 @@ paths:
                 type: object
                 example:
                   data:
-                    id: 65
-                    account_number: CMR40142291250348763559273871
+                    id: 89
+                    account_number: CMR25797017525860773759160879
                     account_type: CURRENT
                     account_balance: 10000000
                     owner:
@@ -469,14 +469,14 @@ paths:
                       email_verified_at: '2022-01-21T12:02:54.000000Z'
                       created_at: '2022-01-21T12:02:54.000000Z'
                       updated_at: '2022-01-21T12:02:54.000000Z'
-                    created_at: '2022-01-21T15:11:11.000000Z'
-                    updated_at: '2022-01-21T15:11:11.000000Z'
+                    created_at: '2022-01-21T16:24:57.000000Z'
+                    updated_at: '2022-01-21T16:24:57.000000Z'
                 properties:
                   data:
                     type: object
                     example:
-                      id: 65
-                      account_number: CMR40142291250348763559273871
+                      id: 89
+                      account_number: CMR25797017525860773759160879
                       account_type: CURRENT
                       account_balance: 10000000
                       owner:
@@ -515,8 +515,8 @@ paths:
                         email_verified_at: '2022-01-21T12:02:54.000000Z'
                         created_at: '2022-01-21T12:02:54.000000Z'
                         updated_at: '2022-01-21T12:02:54.000000Z'
-                      created_at: '2022-01-21T15:11:11.000000Z'
-                      updated_at: '2022-01-21T15:11:11.000000Z'
+                      created_at: '2022-01-21T16:24:57.000000Z'
+                      updated_at: '2022-01-21T16:24:57.000000Z'
       tags:
         - 'Bank Account Management'
     parameters:
@@ -718,11 +718,11 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 128 characters.'
-                  example: tzsybbpijgqieyznennnolxcwxocqeqtkcvzqrvwrkzfpkvrnjtudsikevnfycahizdfcrvncfmmumovqcqkgnlsxefgdrfulrfuxwfwzroi
+                  example: rfufnrbjythsvowkatvzidopdpoirvkfjrsphwfhnxtdzaebwhzienuleglajeqzccpixadmaocdqntuxhvhxzxlxqdlirhisbulibhulh
                 code:
                   type: string
                   description: 'Must not be greater than 16 characters.'
-                  example: ''
+                  example: hpgdcyqnrqz
               required:
                 - name
                 - code
@@ -731,7 +731,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the bank.'
-        example: 15
+        example: 20
         required: true
         schema:
           type: integer
@@ -831,7 +831,7 @@ paths:
         in: path
         name: bank
         description: ''
-        example: 11
+        example: 12
         required: true
         schema:
           type: integer
@@ -874,11 +874,11 @@ paths:
                 from:
                   type: string
                   description: ''
-                  example: ipsum
+                  example: architecto
                 to:
                   type: string
                   description: ''
-                  example: impedit
+                  example: labore
                 amount:
                   type: number
                   description: 'Must be at least 0.'
@@ -934,7 +934,7 @@ paths:
                 account_number:
                   type: string
                   description: ''
-                  example: minus
+                  example: sed
                 amount:
                   type: number
                   description: 'Must be at least 0.'
@@ -989,7 +989,7 @@ paths:
                 account_number:
                   type: string
                   description: ''
-                  example: autem
+                  example: porro
                 amount:
                   type: number
                   description: 'Must be at least 0.'
@@ -1005,6 +1005,481 @@ paths:
               required:
                 - account_number
                 - amount
+  /api/v1/bank-branches:
+    get:
+      summary: 'Get banks accounts'
+      description: 'This resource fetches all the list of bank accounts.'
+      parameters:
+        -
+          in: query
+          name: page_size
+          description: 'Size per page. Default is 20.'
+          example: 20
+          required: false
+          schema:
+            type: integer
+            description: 'Size per page. Default is 20.'
+            example: 20
+        -
+          in: query
+          name: page
+          description: 'Page to view. Default is 1.'
+          example: 1
+          required: false
+          schema:
+            type: integer
+            description: 'Page to view. Default is 1.'
+            example: 1
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: null
+                      name: 'United Bank for Africa - Head Office'
+                      bank: null
+                      created_at: null
+                      updated_at: null
+                    -
+                      id: null
+                      name: 'United Bank for Africa - Head Office'
+                      bank: null
+                      created_at: null
+                      updated_at: null
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: null
+                        name: 'United Bank for Africa - Head Office'
+                        bank: null
+                        created_at: null
+                        updated_at: null
+                      -
+                        id: null
+                        name: 'United Bank for Africa - Head Office'
+                        bank: null
+                        created_at: null
+                        updated_at: null
+                    items:
+                      type: object
+      tags:
+        - 'Bank Branches Management'
+    post:
+      summary: 'Create bank branch'
+      description: 'This endpoint creates a new bank branch.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    id: 84
+                    account_number: CMR06462979615046260912322099
+                    account_type: SAVINGS
+                    account_balance: 10000000
+                    owner:
+                      id: 1
+                      first_name: Clair
+                      middle_name: Conn
+                      last_name: Kshlerin
+                      sex: F
+                      date_of_birth: '1980-07-17'
+                      place_of_birth: 'South Zariatown'
+                      nationality: CMR
+                      country_of_origin: CMR
+                      address_line_1: '49914 Braun Station'
+                      address_line_2: "454 Kessler Shoal\nEast Nyahport, FL 55275"
+                      phone: +1-425-449-2435
+                      email: wterry@example.net
+                      created_at_branch: 1
+                      created_by: 1
+                      lastly_updated_by: null
+                      created_at: '2022-01-21T12:02:54.000000Z'
+                      updated_at: '2022-01-21T12:02:54.000000Z'
+                    created_at_branch:
+                      id: 1
+                      name: 'United Bank for Africa - Head Office'
+                      address_line_1: '95539 Jessica Manor'
+                      address_line_2: "555 Gay Brook Suite 402\nLake Alfredo, NC 89714"
+                      state: LT
+                      country: CMR
+                      bank_id: 1
+                      created_at: '2022-01-21T12:02:54.000000Z'
+                      updated_at: '2022-01-21T12:02:54.000000Z'
+                    created_by:
+                      id: 1
+                      name: 'Judson Gulgowski'
+                      email: kari.koelpin@example.com
+                      email_verified_at: '2022-01-21T12:02:54.000000Z'
+                      created_at: '2022-01-21T12:02:54.000000Z'
+                      updated_at: '2022-01-21T12:02:54.000000Z'
+                    created_at: '2022-01-21T16:24:57.000000Z'
+                    updated_at: '2022-01-21T16:24:57.000000Z'
+                properties:
+                  data:
+                    type: object
+                    example:
+                      id: 84
+                      account_number: CMR06462979615046260912322099
+                      account_type: SAVINGS
+                      account_balance: 10000000
+                      owner:
+                        id: 1
+                        first_name: Clair
+                        middle_name: Conn
+                        last_name: Kshlerin
+                        sex: F
+                        date_of_birth: '1980-07-17'
+                        place_of_birth: 'South Zariatown'
+                        nationality: CMR
+                        country_of_origin: CMR
+                        address_line_1: '49914 Braun Station'
+                        address_line_2: "454 Kessler Shoal\nEast Nyahport, FL 55275"
+                        phone: +1-425-449-2435
+                        email: wterry@example.net
+                        created_at_branch: 1
+                        created_by: 1
+                        lastly_updated_by: null
+                        created_at: '2022-01-21T12:02:54.000000Z'
+                        updated_at: '2022-01-21T12:02:54.000000Z'
+                      created_at_branch:
+                        id: 1
+                        name: 'United Bank for Africa - Head Office'
+                        address_line_1: '95539 Jessica Manor'
+                        address_line_2: "555 Gay Brook Suite 402\nLake Alfredo, NC 89714"
+                        state: LT
+                        country: CMR
+                        bank_id: 1
+                        created_at: '2022-01-21T12:02:54.000000Z'
+                        updated_at: '2022-01-21T12:02:54.000000Z'
+                      created_by:
+                        id: 1
+                        name: 'Judson Gulgowski'
+                        email: kari.koelpin@example.com
+                        email_verified_at: '2022-01-21T12:02:54.000000Z'
+                        created_at: '2022-01-21T12:02:54.000000Z'
+                        updated_at: '2022-01-21T12:02:54.000000Z'
+                      created_at: '2022-01-21T16:24:57.000000Z'
+                      updated_at: '2022-01-21T16:24:57.000000Z'
+      tags:
+        - 'Bank Branches Management'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 0 characters. Must not be greater than 128 characters.'
+                  example: mgftoqcocydnmaffydopwxnhgbobimarssorrlyaqkqbxoqeqcwcwcmiidrqxkmxnkjywainb
+                address_line_1:
+                  type: string
+                  description: 'Must be at least 0 characters. Must not be greater than 64 characters.'
+                  example: iosonhiszbw
+                address_line_2:
+                  type: string
+                  description: 'Must be at least 0 characters. Must not be greater than 64 characters.'
+                  example: mdnwalykglgfplaxopejneeegtpvhcu
+                state:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 3 characters.'
+                  example: b
+                country:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 3 characters.'
+                  example: po
+                bank:
+                  type: string
+                  description: ''
+                  example: et
+              required:
+                - name
+                - address_line_1
+                - address_line_2
+                - bank
+  '/api/v1/bank-branches/{bank_branch}':
+    get:
+      summary: 'Find a bank account'
+      description: 'This endpoint fetches a bank branch by id.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    id: null
+                    name: 'United Bank for Africa - Head Office'
+                    bank: null
+                    created_at: null
+                    updated_at: null
+                properties:
+                  data:
+                    type: object
+                    example:
+                      id: null
+                      name: 'United Bank for Africa - Head Office'
+                      bank: null
+                      created_at: null
+                      updated_at: null
+      tags:
+        - 'Bank Branches Management'
+    put:
+      summary: 'Update bank branch'
+      description: 'This endpoint updates bank branch.'
+      parameters:
+        -
+          in: header
+          name: Authorization
+          description: ''
+          example: 'Bearer {YOUR_AUTH_KEY}'
+          schema:
+            type: string
+        -
+          in: header
+          name: Content-Type
+          description: ''
+          example: application/json
+          schema:
+            type: string
+        -
+          in: header
+          name: Accept
+          description: ''
+          example: application/json
+          schema:
+            type: string
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    id: 85
+                    account_number: CMR58995991604649884262725579
+                    account_type: SAVINGS
+                    account_balance: 10000000
+                    owner:
+                      id: 1
+                      first_name: Clair
+                      middle_name: Conn
+                      last_name: Kshlerin
+                      sex: F
+                      date_of_birth: '1980-07-17'
+                      place_of_birth: 'South Zariatown'
+                      nationality: CMR
+                      country_of_origin: CMR
+                      address_line_1: '49914 Braun Station'
+                      address_line_2: "454 Kessler Shoal\nEast Nyahport, FL 55275"
+                      phone: +1-425-449-2435
+                      email: wterry@example.net
+                      created_at_branch: 1
+                      created_by: 1
+                      lastly_updated_by: null
+                      created_at: '2022-01-21T12:02:54.000000Z'
+                      updated_at: '2022-01-21T12:02:54.000000Z'
+                    created_at_branch:
+                      id: 1
+                      name: 'United Bank for Africa - Head Office'
+                      address_line_1: '95539 Jessica Manor'
+                      address_line_2: "555 Gay Brook Suite 402\nLake Alfredo, NC 89714"
+                      state: LT
+                      country: CMR
+                      bank_id: 1
+                      created_at: '2022-01-21T12:02:54.000000Z'
+                      updated_at: '2022-01-21T12:02:54.000000Z'
+                    created_by:
+                      id: 1
+                      name: 'Judson Gulgowski'
+                      email: kari.koelpin@example.com
+                      email_verified_at: '2022-01-21T12:02:54.000000Z'
+                      created_at: '2022-01-21T12:02:54.000000Z'
+                      updated_at: '2022-01-21T12:02:54.000000Z'
+                    created_at: '2022-01-21T16:24:57.000000Z'
+                    updated_at: '2022-01-21T16:24:57.000000Z'
+                properties:
+                  data:
+                    type: object
+                    example:
+                      id: 85
+                      account_number: CMR58995991604649884262725579
+                      account_type: SAVINGS
+                      account_balance: 10000000
+                      owner:
+                        id: 1
+                        first_name: Clair
+                        middle_name: Conn
+                        last_name: Kshlerin
+                        sex: F
+                        date_of_birth: '1980-07-17'
+                        place_of_birth: 'South Zariatown'
+                        nationality: CMR
+                        country_of_origin: CMR
+                        address_line_1: '49914 Braun Station'
+                        address_line_2: "454 Kessler Shoal\nEast Nyahport, FL 55275"
+                        phone: +1-425-449-2435
+                        email: wterry@example.net
+                        created_at_branch: 1
+                        created_by: 1
+                        lastly_updated_by: null
+                        created_at: '2022-01-21T12:02:54.000000Z'
+                        updated_at: '2022-01-21T12:02:54.000000Z'
+                      created_at_branch:
+                        id: 1
+                        name: 'United Bank for Africa - Head Office'
+                        address_line_1: '95539 Jessica Manor'
+                        address_line_2: "555 Gay Brook Suite 402\nLake Alfredo, NC 89714"
+                        state: LT
+                        country: CMR
+                        bank_id: 1
+                        created_at: '2022-01-21T12:02:54.000000Z'
+                        updated_at: '2022-01-21T12:02:54.000000Z'
+                      created_by:
+                        id: 1
+                        name: 'Judson Gulgowski'
+                        email: kari.koelpin@example.com
+                        email_verified_at: '2022-01-21T12:02:54.000000Z'
+                        created_at: '2022-01-21T12:02:54.000000Z'
+                        updated_at: '2022-01-21T12:02:54.000000Z'
+                      created_at: '2022-01-21T16:24:57.000000Z'
+                      updated_at: '2022-01-21T16:24:57.000000Z'
+      tags:
+        - 'Bank Branches Management'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 0 characters. Must not be greater than 128 characters.'
+                  example: ghxqesrgtjurayjouwjeqpotuqe
+                address_line_1:
+                  type: string
+                  description: 'Must be at least 0 characters. Must not be greater than 64 characters.'
+                  example: akbnzhsmgbuopllvyapdvriycqqqb
+                address_line_2:
+                  type: string
+                  description: 'Must be at least 0 characters. Must not be greater than 64 characters.'
+                  example: awmnfzosxlyeryqkvclnlmftwdycptgeeeqwzyohbfllm
+                state:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 3 characters.'
+                  example: ''
+                country:
+                  type: string
+                  description: 'Must be at least 3 characters. Must not be greater than 3 characters.'
+                  example: iy
+                bank:
+                  type: string
+                  description: ''
+                  example: minima
+              required:
+                - name
+                - address_line_1
+                - address_line_2
+                - bank
+    parameters:
+      -
+        in: path
+        name: bank_branch
+        description: ''
+        example: autem
+        required: true
+        schema:
+          type: string
+      -
+        in: path
+        name: bank_account
+        description: 'The bank account id. Default 1.'
+        example: 1
+        required: true
+        schema:
+          type: integer
   /api/v1/customers:
     get:
       summary: 'Display a listing of the resource.'
@@ -1092,120 +1567,35 @@ paths:
         in: path
         name: id
         description: 'The ID of the customer.'
-        example: 7
+        example: 10
         required: true
         schema:
           type: integer
-  /api/v1/bank-branches:
-    get:
-      summary: 'Display a listing of the resource.'
-      description: ''
-      parameters:
-        -
-          in: header
-          name: Authorization
-          description: ''
-          example: 'Bearer {YOUR_AUTH_KEY}'
-          schema:
-            type: string
-        -
-          in: header
-          name: Content-Type
-          description: ''
-          example: application/json
-          schema:
-            type: string
-        -
-          in: header
-          name: Accept
-          description: ''
-          example: application/json
-          schema:
-            type: string
-      responses:
-        401:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
-      tags:
-        - 'Transaction History'
-    post:
-      summary: 'Store a newly created resource in storage.'
-      description: ''
-      parameters:
-        -
-          in: header
-          name: Authorization
-          description: ''
-          example: 'Bearer {YOUR_AUTH_KEY}'
-          schema:
-            type: string
-        -
-          in: header
-          name: Content-Type
-          description: ''
-          example: application/json
-          schema:
-            type: string
-        -
-          in: header
-          name: Accept
-          description: ''
-          example: application/json
-          schema:
-            type: string
-      responses: {  }
-      tags:
-        - 'Transaction History'
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                name:
-                  type: string
-                  description: 'Must be at least 0 characters. Must not be greater than 128 characters.'
-                  example: jmaagrebfdedsjbyixzjaearrmlilvqtvupnixmoqbtvbjmozvjkuebfq
-                address_line_1:
-                  type: string
-                  description: 'Must be at least 0 characters. Must not be greater than 64 characters.'
-                  example: dgbmhdsjjaiwyzccyrlijsxhbpoclihwtelyiuhutxwgcbqeugvnxlcma
-                address_line_2:
-                  type: string
-                  description: 'Must be at least 0 characters. Must not be greater than 64 characters.'
-                  example: vpwbzrsoxi
-                state:
-                  type: string
-                  description: 'Must be at least 3 characters. Must not be greater than 3 characters.'
-                  example: t
-                country:
-                  type: string
-                  description: 'Must be at least 3 characters. Must not be greater than 3 characters.'
-                  example: ''
-                bank:
-                  type: string
-                  description: ''
-                  example: qui
-              required:
-                - name
-                - address_line_1
-                - address_line_2
-                - bank
   /api/v1/bank-transactions:
     get:
-      summary: 'Display a listing of the resource.'
-      description: ''
+      summary: 'Get all transactions'
+      description: 'This resource fetches all the list of transactions.'
       parameters:
+        -
+          in: query
+          name: page_size
+          description: 'Size per page. Default is 20.'
+          example: 20
+          required: false
+          schema:
+            type: integer
+            description: 'Size per page. Default is 20.'
+            example: 20
+        -
+          in: query
+          name: page
+          description: 'Page to view. Default is 1.'
+          example: 1
+          required: false
+          schema:
+            type: integer
+            description: 'Page to view. Default is 1.'
+            example: 1
         -
           in: header
           name: Authorization
@@ -1244,8 +1634,8 @@ paths:
         - 'Transaction History'
   '/api/v1/bank-transactions/{bank_transaction}':
     get:
-      summary: 'Display the specified resource.'
-      description: ''
+      summary: 'Find a transaction history'
+      description: 'This endpoint fetches a transaction history by id.'
       parameters:
         -
           in: header
@@ -1288,124 +1678,18 @@ paths:
         in: path
         name: bank_transaction
         description: ''
-        example: voluptatem
+        example: minima
         required: true
         schema:
           type: string
-  '/api/v1/bank-branches/{bank_branch}':
-    get:
-      summary: 'Display the specified resource.'
-      description: ''
-      parameters:
-        -
-          in: header
-          name: Authorization
-          description: ''
-          example: 'Bearer {YOUR_AUTH_KEY}'
-          schema:
-            type: string
-        -
-          in: header
-          name: Content-Type
-          description: ''
-          example: application/json
-          schema:
-            type: string
-        -
-          in: header
-          name: Accept
-          description: ''
-          example: application/json
-          schema:
-            type: string
-      responses:
-        401:
-          description: ''
-          content:
-            application/json:
-              schema:
-                type: object
-                example:
-                  message: Unauthenticated.
-                properties:
-                  message:
-                    type: string
-                    example: Unauthenticated.
-      tags:
-        - 'Transaction History'
-    put:
-      summary: 'Update the specified resource in storage.'
-      description: ''
-      parameters:
-        -
-          in: header
-          name: Authorization
-          description: ''
-          example: 'Bearer {YOUR_AUTH_KEY}'
-          schema:
-            type: string
-        -
-          in: header
-          name: Content-Type
-          description: ''
-          example: application/json
-          schema:
-            type: string
-        -
-          in: header
-          name: Accept
-          description: ''
-          example: application/json
-          schema:
-            type: string
-      responses: {  }
-      tags:
-        - 'Transaction History'
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                name:
-                  type: string
-                  description: 'Must be at least 0 characters. Must not be greater than 128 characters.'
-                  example: ihtstzfciodcljpfdx
-                address_line_1:
-                  type: string
-                  description: 'Must be at least 0 characters. Must not be greater than 64 characters.'
-                  example: fxrxmcmwesjqvpclyrajlpdwvkqxnvvttrdcfaafndgsykwzcbwb
-                address_line_2:
-                  type: string
-                  description: 'Must be at least 0 characters. Must not be greater than 64 characters.'
-                  example: vnipnkelwaslxi
-                state:
-                  type: string
-                  description: 'Must be at least 3 characters. Must not be greater than 3 characters.'
-                  example: zo
-                country:
-                  type: string
-                  description: 'Must be at least 3 characters. Must not be greater than 3 characters.'
-                  example: aq
-                bank:
-                  type: string
-                  description: ''
-                  example: voluptatibus
-              required:
-                - name
-                - address_line_1
-                - address_line_2
-                - bank
-    parameters:
       -
         in: path
-        name: bank_branch
-        description: ''
-        example: et
+        name: bank_account
+        description: 'The bank account id. Default 1.'
+        example: 1
         required: true
         schema:
-          type: string
+          type: integer
   /api/v1/users/random:
     get:
       summary: ''
@@ -1503,7 +1787,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the user.'
-        example: 16
+        example: 13
         required: true
         schema:
           type: integer
@@ -1554,6 +1838,9 @@ tags:
     description: ''
   -
     name: 'Bank Account Transactions'
+    description: ''
+  -
+    name: 'Bank Branches Management'
     description: ''
   -
     name: 'Customer Management'

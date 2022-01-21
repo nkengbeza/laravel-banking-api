@@ -10,7 +10,7 @@
     ],
     "info": {
         "name": "Banking API",
-        "_postman_id": "dd811607-72b4-4c7c-a3ff-fe60de2ddc8c",
+        "_postman_id": "0764906d-ab02-4e3a-8a21-d237a6d54adf",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"account_type\":\"ea\",\"initial_deposit\":\"\",\"customer_id\":\"quibusdam\",\"created_at_branch\":2}"
+                            "raw": "{\"account_type\":\"asperiores\",\"initial_deposit\":\"\",\"customer_id\":\"ut\",\"created_at_branch\":11}"
                         },
                         "description": "This endpoint creates a new bank account."
                     },
@@ -49,7 +49,7 @@
                         {
                             "header": [],
                             "code": 200,
-                            "body": "{\"data\":{\"id\":62,\"account_number\":\"CMR91063209134398268065166915\",\"account_type\":\"CURRENT\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T15:11:11.000000Z\",\"updated_at\":\"2022-01-21T15:11:11.000000Z\"}}",
+                            "body": "{\"data\":{\"id\":86,\"account_number\":\"CMR51764736331688994786594421\",\"account_type\":\"SAVINGS\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T16:24:57.000000Z\",\"updated_at\":\"2022-01-21T16:24:57.000000Z\"}}",
                             "name": ""
                         }
                     ]
@@ -94,7 +94,7 @@
                         {
                             "header": [],
                             "code": 200,
-                            "body": "{\"data\":[{\"id\":63,\"account_number\":\"CMR77077475320174654355699186\",\"account_type\":\"SAVINGS\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T15:11:11.000000Z\",\"updated_at\":\"2022-01-21T15:11:11.000000Z\"},{\"id\":64,\"account_number\":\"CMR04224353672431359935425780\",\"account_type\":\"SAVINGS\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T15:11:11.000000Z\",\"updated_at\":\"2022-01-21T15:11:11.000000Z\"}]}",
+                            "body": "{\"data\":[{\"id\":87,\"account_number\":\"CMR50741510408379961061343634\",\"account_type\":\"SAVINGS\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T16:24:57.000000Z\",\"updated_at\":\"2022-01-21T16:24:57.000000Z\"},{\"id\":88,\"account_number\":\"CMR27731536328867187715532832\",\"account_type\":\"SAVINGS\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T16:24:57.000000Z\",\"updated_at\":\"2022-01-21T16:24:57.000000Z\"}]}",
                             "name": ""
                         }
                     ]
@@ -134,7 +134,7 @@
                         {
                             "header": [],
                             "code": 200,
-                            "body": "{\"data\":{\"id\":65,\"account_number\":\"CMR40142291250348763559273871\",\"account_type\":\"CURRENT\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T15:11:11.000000Z\",\"updated_at\":\"2022-01-21T15:11:11.000000Z\"}}",
+                            "body": "{\"data\":{\"id\":89,\"account_number\":\"CMR25797017525860773759160879\",\"account_type\":\"CURRENT\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T16:24:57.000000Z\",\"updated_at\":\"2022-01-21T16:24:57.000000Z\"}}",
                             "name": ""
                         }
                     ]
@@ -262,7 +262,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "15",
+                                    "value": "20",
                                     "description": "The ID of the bank."
                                 }
                             ]
@@ -368,7 +368,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "15",
+                                    "value": "4",
                                     "description": "The ID of the bank."
                                 }
                             ]
@@ -386,7 +386,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"tzsybbpijgqieyznennnolxcwxocqeqtkcvzqrvwrkzfpkvrnjtudsikevnfycahizdfcrvncfmmumovqcqkgnlsxefgdrfulrfuxwfwzroi\",\"code\":\"\"}"
+                            "raw": "{\"name\":\"rfufnrbjythsvowkatvzidopdpoirvkfjrsphwfhnxtdzaebwhzienuleglajeqzccpixadmaocdqntuxhvhxzxlxqdlirhisbulibhulh\",\"code\":\"hpgdcyqnrqz\"}"
                         },
                         "description": ""
                     },
@@ -404,7 +404,7 @@
                                 {
                                     "id": "bank",
                                     "key": "bank",
-                                    "value": "11",
+                                    "value": "12",
                                     "description": ""
                                 }
                             ]
@@ -473,7 +473,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"from\":\"ipsum\",\"to\":\"impedit\",\"amount\":0,\"charges\":0}"
+                            "raw": "{\"from\":\"architecto\",\"to\":\"labore\",\"amount\":0,\"charges\":0}"
                         },
                         "description": ""
                     },
@@ -501,7 +501,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"account_number\":\"minus\",\"amount\":0,\"charges\":0}"
+                            "raw": "{\"account_number\":\"sed\",\"amount\":0,\"charges\":0}"
                         },
                         "description": ""
                     },
@@ -529,11 +529,192 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"account_number\":\"autem\",\"amount\":0,\"charges\":0}"
+                            "raw": "{\"account_number\":\"porro\",\"amount\":0,\"charges\":0}"
                         },
                         "description": ""
                     },
                     "response": []
+                }
+            ]
+        },
+        {
+            "name": "Bank Branches Management",
+            "description": "",
+            "item": [
+                {
+                    "name": "Get banks accounts",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-branches",
+                            "query": [
+                                {
+                                    "key": "page_size",
+                                    "value": "20",
+                                    "description": "Size per page. Default is 20.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "page",
+                                    "value": "1",
+                                    "description": "Page to view. Default is 1.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches?page_size=20&page=1"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This resource fetches all the list of bank accounts."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":null,\"name\":\"United Bank for Africa - Head Office\",\"bank\":null,\"created_at\":null,\"updated_at\":null},{\"id\":null,\"name\":\"United Bank for Africa - Head Office\",\"bank\":null,\"created_at\":null,\"updated_at\":null}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Create bank branch",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-branches",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"mgftoqcocydnmaffydopwxnhgbobimarssorrlyaqkqbxoqeqcwcwcmiidrqxkmxnkjywainb\",\"address_line_1\":\"iosonhiszbw\",\"address_line_2\":\"mdnwalykglgfplaxopejneeegtpvhcu\",\"state\":\"b\",\"country\":\"po\",\"bank\":\"et\"}"
+                        },
+                        "description": "This endpoint creates a new bank branch."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":84,\"account_number\":\"CMR06462979615046260912322099\",\"account_type\":\"SAVINGS\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T16:24:57.000000Z\",\"updated_at\":\"2022-01-21T16:24:57.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Find a bank account",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-branches\/:bank_branch",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches\/:bank_branch",
+                            "variable": [
+                                {
+                                    "id": "bank_branch",
+                                    "key": "bank_branch",
+                                    "value": "autem",
+                                    "description": ""
+                                },
+                                {
+                                    "id": "bank_account",
+                                    "key": "bank_account",
+                                    "value": "1",
+                                    "description": "The bank account id. Default 1."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint fetches a bank branch by id."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":null,\"name\":\"United Bank for Africa - Head Office\",\"bank\":null,\"created_at\":null,\"updated_at\":null}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update bank branch",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-branches\/:bank_branch",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches\/:bank_branch",
+                            "variable": [
+                                {
+                                    "id": "bank_branch",
+                                    "key": "bank_branch",
+                                    "value": "vitae",
+                                    "description": ""
+                                },
+                                {
+                                    "id": "bank_account",
+                                    "key": "bank_account",
+                                    "value": "1",
+                                    "description": "The bank account id. Default 1."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ghxqesrgtjurayjouwjeqpotuqe\",\"address_line_1\":\"akbnzhsmgbuopllvyapdvriycqqqb\",\"address_line_2\":\"awmnfzosxlyeryqkvclnlmftwdycptgeeeqwzyohbfllm\",\"state\":\"\",\"country\":\"iy\",\"bank\":\"minima\"}"
+                        },
+                        "description": "This endpoint updates bank branch."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":85,\"account_number\":\"CMR58995991604649884262725579\",\"account_type\":\"SAVINGS\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T16:24:57.000000Z\",\"updated_at\":\"2022-01-21T16:24:57.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
                 }
             ]
         },
@@ -598,7 +779,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "7",
+                                    "value": "10",
                                     "description": "The ID of the customer."
                                 }
                             ]
@@ -646,58 +827,26 @@
             "description": "",
             "item": [
                 {
-                    "name": "Display a listing of the resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/bank-branches",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches"
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Display a listing of the resource.",
+                    "name": "Get all transactions",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
                             "path": "api\/v1\/bank-transactions",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/bank-transactions"
+                            "query": [
+                                {
+                                    "key": "page_size",
+                                    "value": "20",
+                                    "description": "Size per page. Default is 20.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "page",
+                                    "value": "1",
+                                    "description": "Page to view. Default is 1.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-transactions?page_size=20&page=1"
                         },
                         "method": "GET",
                         "header": [
@@ -711,7 +860,7 @@
                             }
                         ],
                         "body": null,
-                        "description": ""
+                        "description": "This resource fetches all the list of transactions."
                     },
                     "response": [
                         {
@@ -736,35 +885,7 @@
                     ]
                 },
                 {
-                    "name": "Store a newly created resource in storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/bank-branches",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches"
-                        },
-                        "method": "POST",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"name\":\"jmaagrebfdedsjbyixzjaearrmlilvqtvupnixmoqbtvbjmozvjkuebfq\",\"address_line_1\":\"dgbmhdsjjaiwyzccyrlijsxhbpoclihwtelyiuhutxwgcbqeugvnxlcma\",\"address_line_2\":\"vpwbzrsoxi\",\"state\":\"t\",\"country\":\"\",\"bank\":\"qui\"}"
-                        },
-                        "description": ""
-                    },
-                    "response": []
-                },
-                {
-                    "name": "Display the specified resource.",
+                    "name": "Find a transaction history",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
@@ -775,8 +896,14 @@
                                 {
                                     "id": "bank_transaction",
                                     "key": "bank_transaction",
-                                    "value": "voluptatem",
+                                    "value": "minima",
                                     "description": ""
+                                },
+                                {
+                                    "id": "bank_account",
+                                    "key": "bank_account",
+                                    "value": "1",
+                                    "description": "The bank account id. Default 1."
                                 }
                             ]
                         },
@@ -792,7 +919,7 @@
                             }
                         ],
                         "body": null,
-                        "description": ""
+                        "description": "This endpoint fetches a transaction history by id."
                     },
                     "response": [
                         {
@@ -815,95 +942,6 @@
                             "name": ""
                         }
                     ]
-                },
-                {
-                    "name": "Display the specified resource.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/bank-branches\/:bank_branch",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches\/:bank_branch",
-                            "variable": [
-                                {
-                                    "id": "bank_branch",
-                                    "key": "bank_branch",
-                                    "value": "et",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "GET",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": null,
-                        "description": ""
-                    },
-                    "response": [
-                        {
-                            "header": [
-                                {
-                                    "key": "cache-control",
-                                    "value": "no-cache, private"
-                                },
-                                {
-                                    "key": "content-type",
-                                    "value": "application\/json"
-                                },
-                                {
-                                    "key": "access-control-allow-origin",
-                                    "value": "*"
-                                }
-                            ],
-                            "code": 401,
-                            "body": "{\"message\":\"Unauthenticated.\"}",
-                            "name": ""
-                        }
-                    ]
-                },
-                {
-                    "name": "Update the specified resource in storage.",
-                    "request": {
-                        "url": {
-                            "host": "{{baseUrl}}",
-                            "path": "api\/v1\/bank-branches\/:bank_branch",
-                            "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches\/:bank_branch",
-                            "variable": [
-                                {
-                                    "id": "bank_branch",
-                                    "key": "bank_branch",
-                                    "value": "nam",
-                                    "description": ""
-                                }
-                            ]
-                        },
-                        "method": "PUT",
-                        "header": [
-                            {
-                                "key": "Content-Type",
-                                "value": "application\/json"
-                            },
-                            {
-                                "key": "Accept",
-                                "value": "application\/json"
-                            }
-                        ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"name\":\"ihtstzfciodcljpfdx\",\"address_line_1\":\"fxrxmcmwesjqvpclyrajlpdwvkqxnvvttrdcfaafndgsykwzcbwb\",\"address_line_2\":\"vnipnkelwaslxi\",\"state\":\"zo\",\"country\":\"aq\",\"bank\":\"voluptatibus\"}"
-                        },
-                        "description": ""
-                    },
-                    "response": []
                 }
             ]
         },
@@ -954,7 +992,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "57"
+                                    "value": "59"
                                 },
                                 {
                                     "key": "access-control-allow-origin",
@@ -979,7 +1017,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "16",
+                                    "value": "13",
                                     "description": "The ID of the user."
                                 }
                             ]
@@ -1015,7 +1053,7 @@
                                 },
                                 {
                                     "key": "x-ratelimit-remaining",
-                                    "value": "56"
+                                    "value": "58"
                                 },
                                 {
                                     "key": "access-control-allow-origin",

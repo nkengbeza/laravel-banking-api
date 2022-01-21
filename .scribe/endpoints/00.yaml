@@ -21,7 +21,7 @@ endpoints:
         name: account_type
         description: ''
         required: true
-        example: ea
+        example: asperiores
         type: string
         custom: []
       initial_deposit:
@@ -35,20 +35,20 @@ endpoints:
         name: customer_id
         description: ''
         required: true
-        example: quibusdam
+        example: ut
         type: string
         custom: []
       created_at_branch:
         name: created_at_branch
         description: ''
         required: true
-        example: 2
+        example: 11
         type: integer
         custom: []
     responses:
       -
         status: 200
-        content: '{"data":{"id":62,"account_number":"CMR91063209134398268065166915","account_type":"CURRENT","account_balance":10000000,"owner":{"id":1,"first_name":"Clair","middle_name":"Conn","last_name":"Kshlerin","sex":"F","date_of_birth":"1980-07-17","place_of_birth":"South Zariatown","nationality":"CMR","country_of_origin":"CMR","address_line_1":"49914 Braun Station","address_line_2":"454 Kessler Shoal\nEast Nyahport, FL 55275","phone":"+1-425-449-2435","email":"wterry@example.net","created_at_branch":1,"created_by":1,"lastly_updated_by":null,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at_branch":{"id":1,"name":"United Bank for Africa - Head Office","address_line_1":"95539 Jessica Manor","address_line_2":"555 Gay Brook Suite 402\nLake Alfredo, NC 89714","state":"LT","country":"CMR","bank_id":1,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_by":{"id":1,"name":"Judson Gulgowski","email":"kari.koelpin@example.com","email_verified_at":"2022-01-21T12:02:54.000000Z","created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at":"2022-01-21T15:11:11.000000Z","updated_at":"2022-01-21T15:11:11.000000Z"}}'
+        content: '{"data":{"id":86,"account_number":"CMR51764736331688994786594421","account_type":"SAVINGS","account_balance":10000000,"owner":{"id":1,"first_name":"Clair","middle_name":"Conn","last_name":"Kshlerin","sex":"F","date_of_birth":"1980-07-17","place_of_birth":"South Zariatown","nationality":"CMR","country_of_origin":"CMR","address_line_1":"49914 Braun Station","address_line_2":"454 Kessler Shoal\nEast Nyahport, FL 55275","phone":"+1-425-449-2435","email":"wterry@example.net","created_at_branch":1,"created_by":1,"lastly_updated_by":null,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at_branch":{"id":1,"name":"United Bank for Africa - Head Office","address_line_1":"95539 Jessica Manor","address_line_2":"555 Gay Brook Suite 402\nLake Alfredo, NC 89714","state":"LT","country":"CMR","bank_id":1,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_by":{"id":1,"name":"Judson Gulgowski","email":"kari.koelpin@example.com","email_verified_at":"2022-01-21T12:02:54.000000Z","created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at":"2022-01-21T16:24:57.000000Z","updated_at":"2022-01-21T16:24:57.000000Z"}}'
         headers: []
         description: null
     responseFields: []
@@ -85,7 +85,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":[{"id":63,"account_number":"CMR77077475320174654355699186","account_type":"SAVINGS","account_balance":10000000,"owner":{"id":1,"first_name":"Clair","middle_name":"Conn","last_name":"Kshlerin","sex":"F","date_of_birth":"1980-07-17","place_of_birth":"South Zariatown","nationality":"CMR","country_of_origin":"CMR","address_line_1":"49914 Braun Station","address_line_2":"454 Kessler Shoal\nEast Nyahport, FL 55275","phone":"+1-425-449-2435","email":"wterry@example.net","created_at_branch":1,"created_by":1,"lastly_updated_by":null,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at_branch":{"id":1,"name":"United Bank for Africa - Head Office","address_line_1":"95539 Jessica Manor","address_line_2":"555 Gay Brook Suite 402\nLake Alfredo, NC 89714","state":"LT","country":"CMR","bank_id":1,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_by":{"id":1,"name":"Judson Gulgowski","email":"kari.koelpin@example.com","email_verified_at":"2022-01-21T12:02:54.000000Z","created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at":"2022-01-21T15:11:11.000000Z","updated_at":"2022-01-21T15:11:11.000000Z"},{"id":64,"account_number":"CMR04224353672431359935425780","account_type":"SAVINGS","account_balance":10000000,"owner":{"id":1,"first_name":"Clair","middle_name":"Conn","last_name":"Kshlerin","sex":"F","date_of_birth":"1980-07-17","place_of_birth":"South Zariatown","nationality":"CMR","country_of_origin":"CMR","address_line_1":"49914 Braun Station","address_line_2":"454 Kessler Shoal\nEast Nyahport, FL 55275","phone":"+1-425-449-2435","email":"wterry@example.net","created_at_branch":1,"created_by":1,"lastly_updated_by":null,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at_branch":{"id":1,"name":"United Bank for Africa - Head Office","address_line_1":"95539 Jessica Manor","address_line_2":"555 Gay Brook Suite 402\nLake Alfredo, NC 89714","state":"LT","country":"CMR","bank_id":1,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_by":{"id":1,"name":"Judson Gulgowski","email":"kari.koelpin@example.com","email_verified_at":"2022-01-21T12:02:54.000000Z","created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at":"2022-01-21T15:11:11.000000Z","updated_at":"2022-01-21T15:11:11.000000Z"}]}'
+        content: '{"data":[{"id":87,"account_number":"CMR50741510408379961061343634","account_type":"SAVINGS","account_balance":10000000,"owner":{"id":1,"first_name":"Clair","middle_name":"Conn","last_name":"Kshlerin","sex":"F","date_of_birth":"1980-07-17","place_of_birth":"South Zariatown","nationality":"CMR","country_of_origin":"CMR","address_line_1":"49914 Braun Station","address_line_2":"454 Kessler Shoal\nEast Nyahport, FL 55275","phone":"+1-425-449-2435","email":"wterry@example.net","created_at_branch":1,"created_by":1,"lastly_updated_by":null,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at_branch":{"id":1,"name":"United Bank for Africa - Head Office","address_line_1":"95539 Jessica Manor","address_line_2":"555 Gay Brook Suite 402\nLake Alfredo, NC 89714","state":"LT","country":"CMR","bank_id":1,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_by":{"id":1,"name":"Judson Gulgowski","email":"kari.koelpin@example.com","email_verified_at":"2022-01-21T12:02:54.000000Z","created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at":"2022-01-21T16:24:57.000000Z","updated_at":"2022-01-21T16:24:57.000000Z"},{"id":88,"account_number":"CMR27731536328867187715532832","account_type":"SAVINGS","account_balance":10000000,"owner":{"id":1,"first_name":"Clair","middle_name":"Conn","last_name":"Kshlerin","sex":"F","date_of_birth":"1980-07-17","place_of_birth":"South Zariatown","nationality":"CMR","country_of_origin":"CMR","address_line_1":"49914 Braun Station","address_line_2":"454 Kessler Shoal\nEast Nyahport, FL 55275","phone":"+1-425-449-2435","email":"wterry@example.net","created_at_branch":1,"created_by":1,"lastly_updated_by":null,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at_branch":{"id":1,"name":"United Bank for Africa - Head Office","address_line_1":"95539 Jessica Manor","address_line_2":"555 Gay Brook Suite 402\nLake Alfredo, NC 89714","state":"LT","country":"CMR","bank_id":1,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_by":{"id":1,"name":"Judson Gulgowski","email":"kari.koelpin@example.com","email_verified_at":"2022-01-21T12:02:54.000000Z","created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at":"2022-01-21T16:24:57.000000Z","updated_at":"2022-01-21T16:24:57.000000Z"}]}'
         headers: []
         description: null
     responseFields: []
@@ -115,7 +115,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"data":{"id":65,"account_number":"CMR40142291250348763559273871","account_type":"CURRENT","account_balance":10000000,"owner":{"id":1,"first_name":"Clair","middle_name":"Conn","last_name":"Kshlerin","sex":"F","date_of_birth":"1980-07-17","place_of_birth":"South Zariatown","nationality":"CMR","country_of_origin":"CMR","address_line_1":"49914 Braun Station","address_line_2":"454 Kessler Shoal\nEast Nyahport, FL 55275","phone":"+1-425-449-2435","email":"wterry@example.net","created_at_branch":1,"created_by":1,"lastly_updated_by":null,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at_branch":{"id":1,"name":"United Bank for Africa - Head Office","address_line_1":"95539 Jessica Manor","address_line_2":"555 Gay Brook Suite 402\nLake Alfredo, NC 89714","state":"LT","country":"CMR","bank_id":1,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_by":{"id":1,"name":"Judson Gulgowski","email":"kari.koelpin@example.com","email_verified_at":"2022-01-21T12:02:54.000000Z","created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at":"2022-01-21T15:11:11.000000Z","updated_at":"2022-01-21T15:11:11.000000Z"}}'
+        content: '{"data":{"id":89,"account_number":"CMR25797017525860773759160879","account_type":"CURRENT","account_balance":10000000,"owner":{"id":1,"first_name":"Clair","middle_name":"Conn","last_name":"Kshlerin","sex":"F","date_of_birth":"1980-07-17","place_of_birth":"South Zariatown","nationality":"CMR","country_of_origin":"CMR","address_line_1":"49914 Braun Station","address_line_2":"454 Kessler Shoal\nEast Nyahport, FL 55275","phone":"+1-425-449-2435","email":"wterry@example.net","created_at_branch":1,"created_by":1,"lastly_updated_by":null,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at_branch":{"id":1,"name":"United Bank for Africa - Head Office","address_line_1":"95539 Jessica Manor","address_line_2":"555 Gay Brook Suite 402\nLake Alfredo, NC 89714","state":"LT","country":"CMR","bank_id":1,"created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_by":{"id":1,"name":"Judson Gulgowski","email":"kari.koelpin@example.com","email_verified_at":"2022-01-21T12:02:54.000000Z","created_at":"2022-01-21T12:02:54.000000Z","updated_at":"2022-01-21T12:02:54.000000Z"},"created_at":"2022-01-21T16:24:57.000000Z","updated_at":"2022-01-21T16:24:57.000000Z"}}'
         headers: []
         description: null
     responseFields: []
@@ -210,7 +210,7 @@ endpoints:
         name: id
         description: 'The ID of the bank.'
         required: true
-        example: 15
+        example: 20
         type: integer
         custom: []
     queryParameters: []
@@ -277,7 +277,7 @@ endpoints:
         name: id
         description: 'The ID of the bank.'
         required: true
-        example: 15
+        example: 4
         type: integer
         custom: []
     queryParameters: []
@@ -286,14 +286,14 @@ endpoints:
         name: name
         description: 'Must not be greater than 128 characters.'
         required: true
-        example: tzsybbpijgqieyznennnolxcwxocqeqtkcvzqrvwrkzfpkvrnjtudsikevnfycahizdfcrvncfmmumovqcqkgnlsxefgdrfulrfuxwfwzroi
+        example: rfufnrbjythsvowkatvzidopdpoirvkfjrsphwfhnxtdzaebwhzienuleglajeqzccpixadmaocdqntuxhvhxzxlxqdlirhisbulibhulh
         type: string
         custom: []
       code:
         name: code
         description: 'Must not be greater than 16 characters.'
         required: true
-        example: ''
+        example: hpgdcyqnrqz
         type: string
         custom: []
     responses: []
@@ -316,7 +316,7 @@ endpoints:
         name: bank
         description: ''
         required: true
-        example: 11
+        example: 12
         type: integer
         custom: []
     queryParameters: []

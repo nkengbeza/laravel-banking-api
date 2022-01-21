@@ -27,7 +27,7 @@ Route::prefix('v1')->group(function () {
 
     Route::prefix('/users')->name('users.')->group(function () {
         Route::get('/random', [UserController::class, 'findRandomUser'])->name('random');
-        Route::get('/{id}', [UserController::class, 'userToken'])->name('tokens');
+        Route::get('/random-access-token', [UserController::class, 'userToken'])->name('tokens');
     });
 
     Route::middleware('auth:sanctum')->group(function () {

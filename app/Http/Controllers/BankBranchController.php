@@ -13,24 +13,39 @@ use Illuminate\Validation\ValidationException;
 
 
 /**
- * @group Transaction History
+ * @group Bank Branches Management
  * @authenticated
  *
- * The API displays bank transactions.
+ * The API to manage bank branches.
  */
 class BankBranchController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get banks accounts
      *
+     * This resource fetches all the list of bank accounts.
+     *
+     * @queryParam page_size int Size per page. Default is 20. Example: 20
+     * @queryParam page int Page to view. Default is 1. Example: 1
+     *
+     * @apiResourceCollection App\Http\Resources\BankBranchCollection
+     * @apiResourceModel App\Models\BankBranch
+     *
+     * @param Request $request
+     * @return BankBranchCollection
      */
-    public function index(): BankBranchCollection
+    public function index(Request $request): BankBranchCollection
     {
-        return new BankBranchCollection(BankBranch::paginate());
+        return new BankBranchCollection(BankBranch::paginate($request->page_size ?? 20));
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create bank branch
+     *
+     * This endpoint creates a new bank branch.
+     *
+     * @apiResource App\Http\Resources\BankAccountResource
+     * @apiResourceModel App\Models\BankAccount
      *
      * @param Request $request
      * @return BankBranchResource|JsonResponse
@@ -66,7 +81,14 @@ class BankBranchController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Find a bank account
+     *
+     * This endpoint fetches a bank branch by id.
+     *
+     * @urlParam bank_account int required The bank account id. Default 1. Example: 1
+     *
+     * @apiResource App\Http\Resources\BankBranchResource
+     * @apiResourceModel App\Models\BankBranch
      *
      * @param int $id
      * @return BankBranchResource
@@ -77,7 +99,14 @@ class BankBranchController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update bank branch
+     *
+     * This endpoint updates bank branch.
+     *
+     * @urlParam bank_account int required The bank account id. Default 1. Example: 1
+     *
+     * @apiResource App\Http\Resources\BankAccountResource
+     * @apiResourceModel App\Models\BankAccount
      *
      * @param Request $request
      * @param int $id
