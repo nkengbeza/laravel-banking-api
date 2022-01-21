@@ -21,7 +21,7 @@ use Illuminate\Validation\ValidationException;
 class BankBranchController extends Controller
 {
     /**
-     * Get banks accounts
+     * Get banks branches
      *
      * This resource fetches all the list of bank accounts.
      *
@@ -81,11 +81,11 @@ class BankBranchController extends Controller
     }
 
     /**
-     * Find a bank account
+     * Find a bank branch
      *
      * This endpoint fetches a bank branch by id.
      *
-     * @urlParam bank_account int required The bank account id. Default 1. Example: 1
+     * @urlParam bank_branch int required The bank branch id. Default 1. Example: 1
      *
      * @apiResource App\Http\Resources\BankBranchResource
      * @apiResourceModel App\Models\BankBranch
@@ -103,7 +103,7 @@ class BankBranchController extends Controller
      *
      * This endpoint updates bank branch.
      *
-     * @urlParam bank_account int required The bank account id. Default 1. Example: 1
+     * @urlParam bank_branch int required The bank branch id. Default 1. Example: 1
      *
      * @apiResource App\Http\Resources\BankAccountResource
      * @apiResourceModel App\Models\BankAccount

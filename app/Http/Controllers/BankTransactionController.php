@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Contracts\ITransactionService;
+use App\Models\TransactionHistory;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -29,6 +30,12 @@ class BankTransactionController extends Controller
     }
 
     /**
+     * Transfer Service
+     *
+     * This endpoint transfers money from one account to another
+     *
+     * @apiResourceModel App\Models\TransactionHistory
+     *
      * @param Request $request
      * @return JsonResponse
      * @throws ValidationException
@@ -53,6 +60,12 @@ class BankTransactionController extends Controller
     }
 
     /**
+     * Deposit Service
+     *
+     * This endpoint deposits money into an account
+     *
+     * @apiResourceModel App\Models\TransactionHistory
+     *
      * @param Request $request
      * @return JsonResponse
      * @throws ValidationException
@@ -75,6 +88,12 @@ class BankTransactionController extends Controller
     }
 
     /**
+     * Withdrawal Service
+     *
+     * This endpoint helps to withdraw monry from an account
+     *
+     * @apiResourceModel App\Models\TransactionHistory
+     *
      * @param Request $request
      * @return JsonResponse
      * @throws ValidationException

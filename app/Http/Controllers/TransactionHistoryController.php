@@ -39,7 +39,7 @@ class TransactionHistoryController extends Controller
      *
      * This endpoint fetches a transaction history by id.
      *
-     * @urlParam bank_account int required The bank account id. Default 1. Example: 1
+     * @urlParam transaction_history int required The transaction history id. Default 1. Example: 1
      *
      * @apiResource App\Http\Resources\TransactionHistoryResource
      * @apiResourceModel App\Models\TransactionHistory

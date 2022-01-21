@@ -22,17 +22,31 @@ use Illuminate\Validation\ValidationException;
 class CustomerController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get customers
      *
+     * This resource fetches all customers.
+     *
+     * @queryParam page_size int Size per page. Default is 20. Example: 20
+     * @queryParam page int Page to view. Default is 1. Example: 1
+     *
+     * @apiResourceCollection App\Http\Resources\BankAccountCollection
+     * @apiResourceModel App\Models\BankAccount
+     *
+     * @param Request $request
      * @return CustomerCollection
      */
-    public function index()
+    public function index(Request $request): CustomerCollection
     {
-        return new CustomerCollection(Customer::paginate());
+        return new CustomerCollection(Customer::paginate($request->page_size ?? 20));
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create customer
+     *
+     * This endpoint creates a customer.
+     *
+     * @apiResource App\Http\Resources\CustomerResource
+     * @apiResourceModel App\Models\Customer
      *
      * @param Request $request
      * @return CustomerResource|JsonResponse
@@ -88,7 +102,14 @@ class CustomerController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Find a customer
+     *
+     * This endpoint fetches a customer by id.
+     *
+     * @urlParam customer int required The customer id. Default 1. Example: 1
+     *
+     * @apiResource App\Http\Resources\CustomerResource
+     * @apiResourceModel App\Models\Customer
      *
      * @param int $id
      * @return CustomerResource

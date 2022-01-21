@@ -14,27 +14,43 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 
 /**
- * @group Bank Account Management
+ * @group Bank Management
  * @authenticated
  *
- * The API to perform simple bank transactions.
+ * The API to perform simple management tasks on the bank info.
  */
 class BankController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Get banks branches
      *
+     * This resource fetches all the list of bank accounts.
+     *
+     * @queryParam page_size int Size per page. Default is 20. Example: 20
+     * @queryParam page int Page to view. Default is 1. Example: 1
+     *
+     * @apiResourceCollection App\Http\Resources\BankCollection
+     * @apiResourceModel App\Models\Bank
+     *
+     * @param Request $request
      * @return BankCollection
      */
-    public function index(): BankCollection
+    public function index(Request $request): BankCollection
     {
-        return new BankCollection(Bank::paginate());
+        return new BankCollection(Bank::paginate($request->page_size ?? 20));
     }
 
     /**
-     * Display the specified resource.
+     * Find a bank
      *
-     * @param  int  $id
+     * This endpoint fetches a bank by id.
+     *
+     * @urlParam bank int required The bank branch id. Default 1. Example: 1
+     *
+     * @apiResource App\Http\Resources\BankResource
+     * @apiResourceModel App\Models\Bank
+     *
+     * @param int $id
      * @return BankResource
      */
     public function show(int $id): BankResource
@@ -43,7 +59,14 @@ class BankController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update bank
+     *
+     * This endpoint updates bank.
+     *
+     * @urlParam bank int required The bank branch id. Default 1. Example: 1
+     *
+     * @apiResource App\Http\Resources\BankResource
+     * @apiResourceModel App\Models\Bank
      *
      * @param Request $request
      * @param int $id
@@ -71,12 +94,25 @@ class BankController extends Controller
     }
 
     /**
+     * Get branches of a bank
+     *
+     * This resource fetches the list of branches in a bank.
+     *
+     * @queryParam page_size int Size per page. Default is 20. Example: 20
+     * @queryParam page int Page to view. Default is 1. Example: 1
+     *
+     * @urlParam bank int required The bank branch id. Default 1. Example: 1
+     *
+     * @apiResourceCollection App\Http\Resources\BankBranchCollection
+     * @apiResourceModel App\Models\BankBranch
+     *
+     * @param Request $request
      * @param int $id
      * @return BankBranchCollection
      */
-    public function bankBranches(int $id): BankBranchCollection
+    public function bankBranches(Request $request, int $id): BankBranchCollection
     {
-        return new BankBranchCollection(BankBranch::where(['bank_id', '=', $id])->paginate());
+        return new BankBranchCollection(BankBranch::where(['bank_id', '=', $id])->paginate($request->page_size ?? 20));
     }
 
 }
