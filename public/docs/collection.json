@@ -1,0 +1,1082 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost:8000"
+        }
+    ],
+    "info": {
+        "name": "Banking API",
+        "_postman_id": "dd811607-72b4-4c7c-a3ff-fe60de2ddc8c",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Bank Account Management",
+            "description": "",
+            "item": [
+                {
+                    "name": "Create bank account",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-accounts",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-accounts"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"account_type\":\"ea\",\"initial_deposit\":\"\",\"customer_id\":\"quibusdam\",\"created_at_branch\":2}"
+                        },
+                        "description": "This endpoint creates a new bank account."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":62,\"account_number\":\"CMR91063209134398268065166915\",\"account_type\":\"CURRENT\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T15:11:11.000000Z\",\"updated_at\":\"2022-01-21T15:11:11.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Get banks accounts",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-accounts",
+                            "query": [
+                                {
+                                    "key": "page_size",
+                                    "value": "20",
+                                    "description": "Size per page. Default is 20.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "page",
+                                    "value": "1",
+                                    "description": "Page to view. Default is 1.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-accounts?page_size=20&page=1"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This resource fetches all the list of bank accounts."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":63,\"account_number\":\"CMR77077475320174654355699186\",\"account_type\":\"SAVINGS\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T15:11:11.000000Z\",\"updated_at\":\"2022-01-21T15:11:11.000000Z\"},{\"id\":64,\"account_number\":\"CMR04224353672431359935425780\",\"account_type\":\"SAVINGS\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T15:11:11.000000Z\",\"updated_at\":\"2022-01-21T15:11:11.000000Z\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Find a bank account",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-accounts\/:bank_account",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-accounts\/:bank_account",
+                            "variable": [
+                                {
+                                    "id": "bank_account",
+                                    "key": "bank_account",
+                                    "value": "1",
+                                    "description": "The bank account id. Default 1."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "This endpoint fetches a bank account by id."
+                    },
+                    "response": [
+                        {
+                            "header": [],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":65,\"account_number\":\"CMR40142291250348763559273871\",\"account_type\":\"CURRENT\",\"account_balance\":10000000,\"owner\":{\"id\":1,\"first_name\":\"Clair\",\"middle_name\":\"Conn\",\"last_name\":\"Kshlerin\",\"sex\":\"F\",\"date_of_birth\":\"1980-07-17\",\"place_of_birth\":\"South Zariatown\",\"nationality\":\"CMR\",\"country_of_origin\":\"CMR\",\"address_line_1\":\"49914 Braun Station\",\"address_line_2\":\"454 Kessler Shoal\\nEast Nyahport, FL 55275\",\"phone\":\"+1-425-449-2435\",\"email\":\"wterry@example.net\",\"created_at_branch\":1,\"created_by\":1,\"lastly_updated_by\":null,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at_branch\":{\"id\":1,\"name\":\"United Bank for Africa - Head Office\",\"address_line_1\":\"95539 Jessica Manor\",\"address_line_2\":\"555 Gay Brook Suite 402\\nLake Alfredo, NC 89714\",\"state\":\"LT\",\"country\":\"CMR\",\"bank_id\":1,\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_by\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"email_verified_at\":\"2022-01-21T12:02:54.000000Z\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"},\"created_at\":\"2022-01-21T15:11:11.000000Z\",\"updated_at\":\"2022-01-21T15:11:11.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/banks",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/banks"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Display transfer histories",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-accounts\/:bank_account\/transfer-histories",
+                            "query": [
+                                {
+                                    "key": "page_size",
+                                    "value": "20",
+                                    "description": "Size per page. Default is 20.",
+                                    "disabled": false
+                                },
+                                {
+                                    "key": "page",
+                                    "value": "1",
+                                    "description": "Page to view. Default is 1.",
+                                    "disabled": false
+                                }
+                            ],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-accounts\/:bank_account\/transfer-histories?page_size=20&page=1",
+                            "variable": [
+                                {
+                                    "id": "bank_account",
+                                    "key": "bank_account",
+                                    "value": "1",
+                                    "description": "The bank account id. Default 1."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "Fetches all transfer histories. Note that deposits and withdrawal are not included."
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/banks\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/banks\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "15",
+                                    "description": "The ID of the bank."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Get bank account balance",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-accounts\/:bank_account\/account-balance",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-accounts\/:bank_account\/account-balance",
+                            "variable": [
+                                {
+                                    "id": "bank_account",
+                                    "key": "bank_account",
+                                    "value": "1",
+                                    "description": "The bank account id. Default 1."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "The current balance of the bank account will be returned."
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/banks\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/banks\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "15",
+                                    "description": "The ID of the bank."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"tzsybbpijgqieyznennnolxcwxocqeqtkcvzqrvwrkzfpkvrnjtudsikevnfycahizdfcrvncfmmumovqcqkgnlsxefgdrfulrfuxwfwzroi\",\"code\":\"\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/banks\/{bank}\/bank-branches",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/banks\/:bank\/bank-branches",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/banks\/:bank\/bank-branches",
+                            "variable": [
+                                {
+                                    "id": "bank",
+                                    "key": "bank",
+                                    "value": "11",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bank Account Transactions",
+            "description": "",
+            "item": [
+                {
+                    "name": "api\/v1\/bank-transactions\/transfer",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-transactions\/transfer",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-transactions\/transfer"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"from\":\"ipsum\",\"to\":\"impedit\",\"amount\":0,\"charges\":0}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/bank-transactions\/deposit",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-transactions\/deposit",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-transactions\/deposit"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"account_number\":\"minus\",\"amount\":0,\"charges\":0}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/v1\/bank-transactions\/withdraw",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-transactions\/withdraw",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-transactions\/withdraw"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"account_number\":\"autem\",\"amount\":0,\"charges\":0}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Customer Management",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/customers",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/customers"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/customers\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/customers\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "7",
+                                    "description": "The ID of the customer."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Transaction History",
+            "description": "",
+            "item": [
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-branches",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-transactions",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-transactions"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-branches",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"jmaagrebfdedsjbyixzjaearrmlilvqtvupnixmoqbtvbjmozvjkuebfq\",\"address_line_1\":\"dgbmhdsjjaiwyzccyrlijsxhbpoclihwtelyiuhutxwgcbqeugvnxlcma\",\"address_line_2\":\"vpwbzrsoxi\",\"state\":\"t\",\"country\":\"\",\"bank\":\"qui\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-transactions\/:bank_transaction",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-transactions\/:bank_transaction",
+                            "variable": [
+                                {
+                                    "id": "bank_transaction",
+                                    "key": "bank_transaction",
+                                    "value": "voluptatem",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-branches\/:bank_branch",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches\/:bank_branch",
+                            "variable": [
+                                {
+                                    "id": "bank_branch",
+                                    "key": "bank_branch",
+                                    "value": "et",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/bank-branches\/:bank_branch",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/bank-branches\/:bank_branch",
+                            "variable": [
+                                {
+                                    "id": "bank_branch",
+                                    "key": "bank_branch",
+                                    "value": "nam",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"ihtstzfciodcljpfdx\",\"address_line_1\":\"fxrxmcmwesjqvpclyrajlpdwvkqxnvvttrdcfaafndgsykwzcbwb\",\"address_line_2\":\"vnipnkelwaslxi\",\"state\":\"zo\",\"country\":\"aq\",\"bank\":\"voluptatibus\"}"
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "User management",
+            "description": "\nThe API to perform simple user management.",
+            "item": [
+                {
+                    "name": "api\/v1\/users\/random",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/users\/random",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/users\/random"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":{\"id\":1,\"name\":\"Judson Gulgowski\",\"email\":\"kari.koelpin@example.com\",\"created_at\":\"2022-01-21T12:02:54.000000Z\",\"updated_at\":\"2022-01-21T12:02:54.000000Z\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "api\/v1\/users\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/users\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/users\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "16",
+                                    "description": "The ID of the user."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "56"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 404,
+                            "body": "{\"details\":{\"message\":\"Item not found.\"},\"code\":\"ERR_101\"}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "api\/v1\/users.me",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/users.me",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/users.me"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": ""
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"message\":\"Unauthenticated.\"}",
+                            "name": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "bearer"
+    }
+}
